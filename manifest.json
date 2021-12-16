@@ -3,9 +3,6 @@
     "name": "CSX Solutions",
     "description": "Shows solutions to CSX problems",
     "version": "1.0.0",
-    "background": {
-      "service_worker": "background.js"
-      },
     "icons": {
       "128": "images/csxsolutions2.JPG"
     },
@@ -18,10 +15,11 @@
         "activeTab",
         "tabs"
         ],
-    "web_accessbile_resources": ["index.html"],
+    "web_accessible_resources": ["index.html", "solutions.js", "style.css"],
+
     "content_scripts": [{
-      "matches": ["https://csx.codesmith.io/*"],
-      "js": ["solutions.js"] 
+      "matches": ["https://csx.codesmith.io/units/*"],
+      "js": ["hard-learning.js"]
       }]
     
 }
