@@ -34,7 +34,7 @@ iFrame.setAttribute("height", "400px")
 iFrame.src  = chrome.extension.getURL ("index.html");
 const footerElem = document.querySelector(".challenge-test")
 footerElem.insertBefore(iFrame, footerElem.childNodes[1]);
-}, 5000)
+}, 5000);
 
 
 /* document.addEventListener('DOMContentLoaded', () => {

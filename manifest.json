@@ -4,13 +4,17 @@
     "description": "Shows solutions to CSX problems",
     "version": "1.0.0",
     "icons": {
-      "128": "images/csxsolutions2.JPG"
+      "128": "icon128.png",
+      "48": "icon48.png",
+      "16": "icon16.png"
     },
-    "page_action": {
-      "default_icon": {
-        "128": "images/csxsolutions2.JPG"
-        }
-      },
+    "browser_action": {
+      "default_icon": {                   
+        "128": "icon128.png",
+        "48": "icon48.png",
+        "16": "icon16.png" 
+      }
+  },
     "permissions": [
         "activeTab",
         "tabs"
