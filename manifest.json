@@ -1,0 +1,31 @@
+{
+    "manifest_version": 2,
+    "name": "CSX Solutions",
+    "description": "Shows solutions to CSX problems",
+    "version": "1.0.0",
+    "background": {
+      "service_worker": "background.js"
+      },
+    "icons": {
+      "16": "images/download.png",
+      "48": "images/icon.JPG",
+      "128": "images/icon.JPG"
+    },
+    "page_action": {
+      "default_icon": {
+        "16": "images/download.png",
+        "48": "images/icon.JPG",
+        "128": "images/icon.JPG"
+        }
+      },
+    "browser_action": {
+      "default_icon": "images/icon.JPG"
+    },
+    "permissions": ["activeTab"],
+
+    "content_scripts": [{
+      "matches": ["https://csx.codesmith.io/*"],
+      "js": ["solutions.js"] 
+      }]
+    
+}
