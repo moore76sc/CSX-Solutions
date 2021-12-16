@@ -7,22 +7,18 @@
       "service_worker": "background.js"
       },
     "icons": {
-      "16": "images/download.png",
-      "48": "images/icon.JPG",
-      "128": "images/icon.JPG"
+      "128": "images/csxsolutions2.JPG"
     },
     "page_action": {
       "default_icon": {
-        "16": "images/download.png",
-        "48": "images/icon.JPG",
-        "128": "images/icon.JPG"
+        "128": "images/csxsolutions2.JPG"
         }
       },
-    "browser_action": {
-      "default_icon": "images/icon.JPG"
-    },
-    "permissions": ["activeTab"],
-
+    "permissions": [
+        "activeTab",
+        "tabs"
+        ],
+    "web_accessbile_resources": ["index.html"],
     "content_scripts": [{
       "matches": ["https://csx.codesmith.io/*"],
       "js": ["solutions.js"] 
